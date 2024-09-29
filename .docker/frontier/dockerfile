@@ -1,0 +1,14 @@
+FROM node:18 AS node
+WORKDIR /frontier
+
+# Install pnpm
+RUN npm install -g pnpm@latest-8
+
+# Use bash explicitly to source .bashrc and run foundryup in one step
+RUN curl -L https://foundry.paradigm.xyz | bash
+
+RUN /root/.foundry/bin/foundryup
+
+WORKDIR /frontier/builder-examples/
+
+ENV PATH=$PATH:/root/.foundry/bin
