@@ -1,7 +1,7 @@
 Start the containers
 
 ```
-docker compose -d
+docker compose -d && docker compose logs -f world-deployer
 ```
 
 Kill the containers
