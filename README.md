@@ -1,3 +1,7 @@
+Prerequisite
+
+- Docker, see https://docs.docker.com/desktop/install/windows-install/
+
 Building and starting the containers
 
 ```
