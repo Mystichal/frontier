@@ -1,13 +1,7 @@
-Building the containers
+Building and starting the containers
 
 ```
-docker compose build
-```
-
-Start the containers
-
-```
-docker compose -d && docker compose logs -f world-deployer
+docker compose up -d --build && docker logs -f world-deployer
 ```
 
 Kill the containers
@@ -30,7 +24,7 @@ cd smart-gate/packages/contracts
 npmp install
 ```
 
-Then find the WORLD_ADDRESS in ./logs/world-deployer.log
+Then find the WORLD_ADDRESS from the world-deployer container from terminal
 
 ```
 pnpm deploy:local --worldAddress <WORLD_ADDRESS>
