@@ -33,7 +33,7 @@ Example of how to install a contract, smart-gate for example
 docker exec -it frontier sh
 ```
 
-in the new terminal
+in the connected terminal
 
 ```
 cd smart-gate/packages/contracts
