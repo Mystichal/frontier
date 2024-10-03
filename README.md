@@ -1,7 +1,7 @@
 Prerequisite
 
 - Docker, for windows see https://docs.docker.com/desktop/install/windows-install/
-- Docker, for linxu see https://docs.docker.com/desktop/install/linux/
+- Docker, for linux see https://docs.docker.com/desktop/install/linux/
 
 Clone the repo
 
