@@ -16,7 +16,7 @@ Building and starting the containers
 docker compose up -d --build && docker logs -f world-deployer
 ```
 
-How to kill the containers after your done, dont as long as your using them, world-deployer died when its done
+How to kill the containers after your done, dont as long as your using them, world-deployer dies when its done
 
 ```
 docker compose down
