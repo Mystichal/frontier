@@ -2,6 +2,14 @@ Prerequisite
 
 - Docker, see https://docs.docker.com/desktop/install/windows-install/
 
+Clone the repo
+
+```
+git clone https://github.com/Mystichal/frontier.git
+```
+
+Open a terminal in the frontier folder
+
 Building and starting the containers
 
 ```
