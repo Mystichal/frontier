@@ -3,6 +3,10 @@ Prerequisite
 - Docker, for windows see https://docs.docker.com/desktop/install/windows-install/
 - Docker, for linux see https://docs.docker.com/desktop/install/linux/
 
+Docs
+
+- https://docs.evefrontier.com/SmartTurret
+
 Clone the repo
 
 ```
