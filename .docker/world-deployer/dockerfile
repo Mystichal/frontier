@@ -1,0 +1,7 @@
+FROM ghcr.io/projectawakening/world-chain-deployer-image:0.0.17 AS base
+
+COPY .docker/world-deployer/entrypointscript.sh /
+
+RUN chmod +x /entrypointscript.sh
+
+ENTRYPOINT ["/bin/sh", "/entrypointscript.sh"]

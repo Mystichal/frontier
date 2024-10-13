@@ -18,33 +18,25 @@ Open a terminal in the frontier folder
 Building and starting the containers
 
 ```
-docker compose up -d --build && docker logs -f world-deployer
+make up
 ```
 
-How to kill the containers after your done, dont as long as your using them, world-deployer dies when its done
+How to kill the containers after you're done:
 
 ```
-docker compose down
+make down
 ```
 
 Example of how to install a contract, smart-gate for example
 
 ```
-docker exec -it frontier sh
+make install-smart-gate
 ```
 
-in the connected terminal
+Then to deploy contract, you find the world address after the world-deployer container is done running in the ./.logs/run_env.json
 
 ```
-cd smart-gate/packages/contracts
-
-npmp install
-```
-
-Then find the WORLD_ADDRESS from the world-deployer container from terminal
-
-```
-pnpm deploy:local --worldAddress <WORLD_ADDRESS>
+deploy-smart-gate WORLD_ADDRESS=<INSERT_GENERATED_WORLD_ADDRESS_HERE>
 ```
 
 Tada

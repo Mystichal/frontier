@@ -27,10 +27,14 @@ services:
 
   world-deployer:
     container_name: world-deployer
-    image: ghcr.io/projectawakening/world-chain-deployer-image:0.0.17
-    platform: linux/amd64
+    build: 
+      context: .
+      dockerfile: .docker/world-deployer/dockerfile 
     depends_on:
       foundry:
         condition: service_healthy
-    command: "--rpc-url http://foundry:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
+    entrypoint: ["/bin/sh", "/entrypointscript.sh"]
+    volumes:
+      - .logs:/monorepo/logs
     tty: true
+    network_mode: host
