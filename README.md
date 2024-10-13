@@ -39,4 +39,20 @@ Then to deploy contract, you find the world address after the world-deployer con
 make deploy-smart-gate WORLD_ADDRESS=<INSERT_GENERATED_WORLD_ADDRESS_HERE>
 ```
 
+These are the available make commands:
+```
+make up
+make down
+make install-gate-keeper
+make install-item-seller
+make install-smart-gate
+make install-smart-turret
+make install-vending-machine
+make deploy-gate-keeper WORLD_ADDRESS=<WORLD_ADDRESS>
+make deploy-item-seller WORLD_ADDRESS=<WORLD_ADDRESS>
+make deploy-smart-gate WORLD_ADDRESS=<WORLD_ADDRESS>
+make deploy-smart-turret WORLD_ADDRESS=<WORLD_ADDRESS>
+make deploy-vending-machine WORLD_ADDRESS=<WORLD_ADDRESS>
+```
+
 Tada
