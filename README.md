@@ -36,7 +36,7 @@ make install-smart-gate
 Then to deploy contract, you find the world address after the world-deployer container is done running in the ./.logs/run_env.json
 
 ```
-deploy-smart-gate WORLD_ADDRESS=<INSERT_GENERATED_WORLD_ADDRESS_HERE>
+make deploy-smart-gate WORLD_ADDRESS=<INSERT_GENERATED_WORLD_ADDRESS_HERE>
 ```
 
 Tada
